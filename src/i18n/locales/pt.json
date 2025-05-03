@@ -1,0 +1,73 @@
+{
+  "about": "Desenvolvedor de software, estudante de Sistemas de Informação, apaixonado por tecnologia e inovação.",
+  "locale": "Ipatinga, Brasil",
+  "education": "Educação",
+  "formation1": {
+    "title": "Bacharelado em Sistemas de Informação",
+    "institution": "Instituto Federal de Minas Gerais (IFMG)",
+    "description": "Atualmente estou estudando Sistemas de Informação no IFMG, onde estou adquirindo conhecimentos em desenvolvimento de software, gerenciamento de banco de dados e análise de sistemas.",
+    "start": 2023,
+    "end": 2026,
+    "location": "Campus São João Evangelista",
+    "image": "https://www.ifmg.edu.br/santaluzia/logo-1.png/@@images/e5a4798c-b061-4a43-9d97-154f96b36290.png",
+    "link": "https://www.sje.ifmg.edu.br/portal/",
+    "projects": {
+      "title": "Projetos",
+      "items": [
+        {
+          "title": "DicioCode",
+          "description": "O Projeto DicioCode tem como objetivo criar uma aplicação inovadora que auxilie novatos na programação, funcionando como um dicionário de inglês voltado para estudos. Nossa missão é facilitar o aprendizado de termos técnicos, proporcionando uma experiência amigável e eficiente para quem está começando no mundo da programação.",
+          "icon": "pizza",
+          "technologies": [
+            "TypeScript",
+            "Express",
+            "Sequelize",
+            "MySQL",
+            "React Native",
+            "Swagger"
+          ],
+          "link": "https://www.github.com/DicioCode"
+        }
+      ]
+    }
+  },
+  "personal_projects": {
+    "title": "Projetos Pessoais",
+    "items": [
+      {
+        "title": "Pizzaria Dona Vilma",
+        "description": "Onde cada fatia é feita com amor e tradição. Aproveite nossas pizzas artesanais, preparadas com os ingredientes mais frescos e um toque especial que só a Dona Vilma sabe criar. Venha experimentar um sabor único de sabor e qualidade!",
+        "icon": "pizza",
+        "technologies": [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Prisma",
+          "Next.js",
+          "Zod"
+        ],
+        "link": "https://github.com/FlockOfCrow/pizzaria-dona-vilma"
+      },
+      {
+        "title": "Busca CEP",
+        "description": "Uma aplicação simples e eficiente que permite pesquisar códigos postais no Brasil. Com uma interface intuitiva, você pode encontrar rapidamente as informações de que precisa.",
+        "icon": "search",
+        "technologies": ["React", "TypeScript", "Tailwind CSS", "Next.js"],
+        "link": "https://github.com/wfabi0/busca-cep"
+      },
+      {
+        "title": "TechDev Blog",
+        "description": "Um blog dedicado à tecnologia e desenvolvimento.",
+        "icon": "rss",
+        "technologies": [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Prisma",
+          "Next.js"
+        ],
+        "link": "https://github.com/wfabi0/techdev-blog"
+      }
+    ]
+  }
+}

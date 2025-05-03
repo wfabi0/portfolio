@@ -1,0 +1,73 @@
+{
+  "about": "Software developer, studying Information Systems, passionate about technology and innovation.",
+  "locale": "Ipatinga, Brazil",
+  "education": "Education",
+  "formation1": {
+    "title": "Bachelor of Information Systems",
+    "institution": "Federal Institute of Minas Gerais (IFMG)",
+    "description": "I'm currently studying Information Systems at IFMG, where I am acquiring knowledge in software development, database management, and system analysis.",
+    "start": 2023,
+    "end": 2026,
+    "location": "Campus São João Evangelista",
+    "image": "https://www.ifmg.edu.br/santaluzia/logo-1.png/@@images/e5a4798c-b061-4a43-9d97-154f96b36290.png",
+    "link": "https://www.sje.ifmg.edu.br/portal/",
+    "projects": {
+      "title": "Projects",
+      "items": [
+        {
+          "title": "DicioCode",
+          "description": "The DicioCode project aims to create an innovative application that assists newcomers in programming, functioning as a dictionary of English focused on studies. Our mission is to facilitate the learning of technical terms, providing a friendly and efficient experience for those starting in the world of programming.",
+          "technologies": [
+            "TypeScript",
+            "Express",
+            "Sequelize",
+            "MySQL",
+            "React Native",
+            "Swagger"
+          ],
+          "link": "https://www.github.com/DicioCode"
+        }
+      ]
+    }
+  },
+  "personal_projects": {
+    "title": "Personal Projects",
+    "items": [
+      {
+        "title": "Pizzaria Dona Vilma",
+        "description": "Where each slice is made with love and tradition. Enjoy our artisanal pizzas, prepared with the freshest ingredients and a special touch that only Dona Vilma knows how to create. Come experience a unique taste of flavor and quality!",
+        "icon": "pizza",
+        "technologies": [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Prisma",
+          "Next.js",
+          "Zod"
+        ],
+        "link": "https://github.com/FlockOfCrow/pizzaria-dona-vilma"
+      },
+      {
+        "title": "Busca CEP",
+        "description": "A simple and efficient application that allows you to search for postal codes in Brazil. With an intuitive interface, you can quickly find the information you need.",
+        "icon": "search",
+        "technologies": ["React", "TypeScript", "Tailwind CSS", "Next.js"],
+        "link": "https://github.com/wfabi0/busca-cep"
+      },
+      {
+        "title": "TechDev Blog",
+        "description": "A blog dedicated to technology and development.",
+        "icon": "rss",
+        "technologies": [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Prisma",
+          "Next.js",
+          "Zod"
+        ],
+        "link": "https://github.com/wfabi0/techdev-blog"
+      }
+    ]
+  }
+}
