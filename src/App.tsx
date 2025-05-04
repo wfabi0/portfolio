@@ -3,6 +3,7 @@ import {
   Code,
   Copy,
   GraduationCap,
+  Laptop,
   MapPin,
   Pizza,
   Rss,
@@ -211,7 +212,7 @@ export default function App() {
 
             <div className="pt-4 border-t border-gray-400 dark:border-gray-700">
               <div className="flex items-center gap-x-2 font-[700] text-[1.3rem]">
-                <GraduationCap className="h-5 w-5" />
+                <Laptop className="h-5 w-5" />
                 <h2>{t("personal_projects.title")}</h2>
               </div>
               {(
