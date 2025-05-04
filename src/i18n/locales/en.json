@@ -35,7 +35,7 @@
     "items": [
       {
         "title": "Pizzaria Dona Vilma",
-        "description": "Where each slice is made with love and tradition. Enjoy our artisanal pizzas, prepared with the freshest ingredients and a special touch that only Dona Vilma knows how to create. Come experience a unique taste of flavor and quality!",
+        "description": "Where each slice is made with love and tradition. Enjoy our artisanal pizzas, prepared with the freshest ingredients and a special touch that only Dona Vilma knows how to create.",
         "icon": "pizza",
         "technologies": [
           "React",

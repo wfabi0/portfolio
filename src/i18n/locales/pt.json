@@ -36,7 +36,7 @@
     "items": [
       {
         "title": "Pizzaria Dona Vilma",
-        "description": "Onde cada fatia é feita com amor e tradição. Aproveite nossas pizzas artesanais, preparadas com os ingredientes mais frescos e um toque especial que só a Dona Vilma sabe criar. Venha experimentar um sabor único de sabor e qualidade!",
+        "description": "Onde cada fatia é feita com amor e tradição. Aproveite nossas pizzas artesanais, preparadas com os ingredientes mais frescos e um toque especial que só a Dona Vilma sabe criar.",
         "icon": "pizza",
         "technologies": [
           "React",
