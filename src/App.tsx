@@ -185,7 +185,7 @@ export default function App() {
                             {project.description}
                           </div>
                           <div>
-                            Tecnologias:{" "}
+                            {t("technologies")}:{" "}
                             <a className="text-gray-600 dark:text-gray-300">
                               {project.technologies
                                 .sort()
@@ -241,7 +241,7 @@ export default function App() {
                         {project.description}
                       </div>
                       <div>
-                        Tecnologias:{" "}
+                      {t("technologies")}:{" "}
                         <a className="text-gray-600 dark:text-gray-300">
                           {project.technologies
                             .sort()
