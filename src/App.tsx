@@ -1,4 +1,5 @@
 import {
+  // Bot,
   Check,
   Code,
   Copy,
@@ -34,6 +35,30 @@ interface ProjectItem {
 interface PersonalProject extends ProjectItem {
   icon: keyof typeof iconMap;
 }
+
+// const technologies = [
+//   "JavaScript",
+//   "TypeScript",
+//   "Node.js",
+//   "React",
+//   "Next.js",
+//   "Express",
+//   "MySQL",
+//   "PostgreSQL",
+//   "MongoDB",
+//   "Python",
+//   "Java",
+//   "C++",
+//   "C#",
+//   "Processing",
+//   "HTML",
+//   "CSS",
+//   "Tailwind CSS",
+//   "Prisma",
+//   "Git",
+//   "Vite",
+//   "Sequelize",
+// ].sort();
 
 export default function App() {
   const { t } = useTranslation();
@@ -113,6 +138,27 @@ export default function App() {
               </div>
             </div>
 
+            {/* <div className="pt-4 border-t border-gray-400 dark:border-gray-700">
+              <div className="flex items-center gap-x-2 font-[700] text-[1.3rem]">
+                <Bot className="h-5 w-5" />
+                <h2>{t("technologies")}</h2>
+              </div>
+              <div className="mt-2">
+                <div className="flex flex-col border-gray-400 dark:border-gray-700 border-l-2 pl-3 gap-y-1">
+                  <div className="flex flex-wrap gap-2">
+                    {technologies.map((tech, index) => (
+                      <a
+                        key={index}
+                        className="dark:text-gray-200 dark:border-gray-200 font-semibold transition duration-300 border-2 p-1 rounded-lg bg-gray-200 dark:bg-zinc-700 cursor-default hover:bg-gray-400 dark:hover:bg-gray-600"
+                      >
+                        {tech}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div> */}
+
             <div className="pt-4 border-t border-gray-400 dark:border-gray-700">
               <div className="flex items-center gap-x-2 font-[700] text-[1.3rem]">
                 <GraduationCap className="h-5 w-5" />
@@ -185,7 +231,10 @@ export default function App() {
                             {project.description}
                           </div>
                           <div>
-                            {t("technologies")}:{" "}
+                            <a className="cursor-default">
+                              {t("technologies")}
+                            </a>
+                            :{" "}
                             <a className="text-gray-600 dark:text-gray-300">
                               {project.technologies
                                 .sort()
@@ -241,7 +290,7 @@ export default function App() {
                         {project.description}
                       </div>
                       <div>
-                      {t("technologies")}:{" "}
+                        <a className="cursor-default">{t("technologies")}</a>:{" "}
                         <a className="text-gray-600 dark:text-gray-300">
                           {project.technologies
                             .sort()
