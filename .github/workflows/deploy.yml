@@ -16,31 +16,26 @@ concurrency:
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    
-    defaults:
-      run:
-        working-directory: ./frontend
-        
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Node.js and pnpm
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - uses: pnpm/action-setup@v4
-        with:
-          version: 9 
+          cache: "pnpm"
+
+      - name: Install pnpm
+        run: npm install -g pnpm
 
       - name: Install dependencies
+        working-directory: ./frontend
         run: pnpm install --frozen-lockfile
 
       - name: Build
+        working-directory: ./frontend
         run: pnpm run build
 
       - name: Setup Pages
@@ -49,7 +44,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # O caminho aqui precisa ser completo desde a raiz
           path: "./frontend/dist"
 
       - name: Deploy to GitHub Pages
