@@ -7,9 +7,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:gh": "DEPLOY_TARGET=gh-pages pnpm run build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "pnpm run build",
+    "predeploy": "pnpm run build:gh",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
