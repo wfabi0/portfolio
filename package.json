@@ -2,7 +2,7 @@
   "name": "portifolio",
   "homepage": "https://wfabi0.github.io/portifolio/",
   "private": false,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
