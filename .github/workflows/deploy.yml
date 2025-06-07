@@ -20,18 +20,22 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    
+    defaults:
+      run:
+        working-directory: ./frontend
+        
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
+      - name: Set up Node.js and pnpm
         uses: actions/setup-node@v4
         with:
           node-version: "22"
-          cache: "npm"
-
-      - name: Install pnpm
-        run: npm install -g pnpm
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9 
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -45,7 +49,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "./dist"
+          # O caminho aqui precisa ser completo desde a raiz
+          path: "./frontend/dist"
 
       - name: Deploy to GitHub Pages
         id: deployment
