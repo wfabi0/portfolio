@@ -2,11 +2,9 @@ name: Build Vite Project
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   build:
@@ -16,17 +14,14 @@ jobs:
       - name: Checkout código
         uses: actions/checkout@v4
 
-      - name: Setup Node.js (LTS)
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: 20
           cache: 'pnpm'
 
       - name: Instalar pnpm
-        uses: pnpm/action-setup@v3
-        with:
-          version: 8
-          run_install: false
+        run: npm install -g pnpm@8
 
       - name: Instalar dependências
         run: pnpm install
