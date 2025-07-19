@@ -36,30 +36,6 @@ interface PersonalProject extends ProjectItem {
   icon: keyof typeof iconMap;
 }
 
-// const technologies = [
-//   "JavaScript",
-//   "TypeScript",
-//   "Node.js",
-//   "React",
-//   "Next.js",
-//   "Express",
-//   "MySQL",
-//   "PostgreSQL",
-//   "MongoDB",
-//   "Python",
-//   "Java",
-//   "C++",
-//   "C#",
-//   "Processing",
-//   "HTML",
-//   "CSS",
-//   "Tailwind CSS",
-//   "Prisma",
-//   "Git",
-//   "Vite",
-//   "Sequelize",
-// ].sort();
-
 export default function App() {
   const { t } = useTranslation();
 

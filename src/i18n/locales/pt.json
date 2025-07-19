@@ -18,7 +18,6 @@
         {
           "title": "DicioCode",
           "description": "O Projeto DicioCode tem como objetivo criar uma aplicação inovadora que auxilie novatos na programação, funcionando como um dicionário de inglês voltado para estudos. Nossa missão é facilitar o aprendizado de termos técnicos, proporcionando uma experiência amigável e eficiente para quem está começando no mundo da programação.",
-          "icon": "pizza",
           "technologies": [
             "TypeScript",
             "Express",
@@ -28,6 +27,20 @@
             "Swagger"
           ],
           "link": "https://www.github.com/DicioCode"
+        },
+        {
+          "title": "Barbearia Fernandes",
+          "description": "O projeto Barbearia Fernandes é uma aplicação desenvolvida como parte do programa trainee da OneBit Empresa Jr, com o objetivo de transformar a gestão de agendamentos em barbearias. Voltado para a otimização do processo de marcação de horários, o sistema oferece uma experiência moderna, intuitiva e eficiente tanto para clientes quanto para profissionais, integrando tecnologia e praticidade no dia a dia do salão.",
+          "technologies": [
+            "TypeScript",
+            "MySQL",
+            "React",
+            "Tailwind CSS",
+            "Next.js",
+            "Java",
+            "Spring Boot"
+          ],
+          "link": "https://www.github.com/wfabi0/barbearia-fernandes"
         }
       ]
     }
