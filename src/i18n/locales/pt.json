@@ -1,8 +1,25 @@
 {
-  "about": "Desenvolvedor de software, estudante de Sistemas de Informação, apaixonado por tecnologia e inovação.",
+  "about": "Desenvolvedor de software, estudante de Sistemas de Informação, apaixonado por tecnologia e inovação. Atualmente trabalho na Cast.",
   "locale": "Ipatinga, Brasil",
   "education": "Educação",
   "technologies": "Tecnologias",
+  "experience": {
+    "title": "Experiência Profissional",
+    "current": "Atual",
+    "cast": {
+      "logoAlt": "Logo da Cast",
+      "role": "Software Engineer Trainee",
+      "description": "Atuando como Software Engineer Trainee em projetos de desenvolvimento e manutenção de aplicações web corporativas, com atuação tanto no front-end quanto no back-end, além da sustentação e evolução de sistemas legados.",
+      "responsibilities": "Minhas responsabilidades envolvem o desenvolvimento de novas funcionalidades, implementação e manutenção de regras de negócio, integração entre sistemas, correção de bugs, manutenção de aplicações legadas e atuação com banco de dados.",
+      "activitiesTitle": "Principais atividades",
+      "activities": [
+        "Desenvolvimento e evolução de aplicações frontend utilizando Angular e TypeScript;",
+        "Desenvolvimento e manutenção de aplicações backend utilizando Java e Spring Boot;",
+        "Atuação em sistemas legados utilizando tecnologias como Java, PrimeFaces, JSF, Hibernate e JBoss/WildFly;",
+        "Criação e manutenção de consultas e scripts utilizando Oracle SQL."
+      ]
+    }
+  },
   "formation1": {
     "title": "Bacharelado em Sistemas de Informação",
     "institution": "Instituto Federal de Minas Gerais (IFMG)",
@@ -17,6 +34,7 @@
       "items": [
         {
           "title": "DicioCode",
+          "image": "https://www.github.com/DicioCode.png",
           "description": "O Projeto DicioCode tem como objetivo criar uma aplicação inovadora que auxilie novatos na programação, funcionando como um dicionário de inglês voltado para estudos. Nossa missão é facilitar o aprendizado de termos técnicos, proporcionando uma experiência amigável e eficiente para quem está começando no mundo da programação.",
           "technologies": [
             "TypeScript",

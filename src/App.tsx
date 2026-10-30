@@ -1,5 +1,6 @@
 import {
   // Bot,
+  BriefcaseBusiness,
   Check,
   Code,
   Copy,
@@ -15,6 +16,8 @@ import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./components/LanguageSwitcher";
 import SocialMidia from "./components/SocialMidia";
 import ThemeToggle from "./components/ThemeToggle";
+import ProjectImage from "./components/ProjectImage";
+import castLogo from "./assets/cast4it_logo.jpg";
 
 const imageUrl = "https://github.com/wfabi0.png";
 const email = "wfabi0@hotmail.com";
@@ -27,6 +30,7 @@ const iconMap = {
 
 interface ProjectItem {
   title: string;
+  image?: string;
   description: string;
   link: string;
   technologies: string[];
@@ -135,6 +139,48 @@ export default function App() {
               </div>
             </div> */}
 
+            <section className="pt-4 border-t border-gray-400 dark:border-gray-700">
+              <div className="flex items-center gap-x-2 font-[700] text-[1.3rem]">
+                <BriefcaseBusiness className="h-5 w-5" aria-hidden="true" />
+                <h2>{t("experience.title")}</h2>
+              </div>
+              <div className="mt-3 flex flex-col gap-y-4">
+                <div className="flex items-center gap-x-2">
+                  <a href="https://www.cast4it.com/">
+                    <img
+                      src={castLogo}
+                      alt={t("experience.cast.logoAlt")}
+                      className="h-9 w-9 rounded-md object-contain bg-white"
+                    />
+                  </a>
+                  <a
+                    href="https://www.cast4it.com/"
+                    className="font-bold uppercase hover:underline"
+                  >
+                    Cast
+                  </a>
+                  <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-xs font-semibold text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-300">
+                    {t("experience.current")}
+                  </span>
+                </div>
+                <div className="flex flex-col gap-y-2 border-l-2 border-gray-400 pl-3 dark:border-gray-700">
+                  <h3 className="font-semibold">{t("experience.cast.role")}</h3>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    {t("experience.cast.description")}
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    {t("experience.cast.responsibilities")}
+                  </p>
+                  <h4 className="font-semibold">{t("experience.cast.activitiesTitle")}</h4>
+                  <ul className="list-disc space-y-1 pl-5 text-gray-600 dark:text-gray-300">
+                    {(t("experience.cast.activities", { returnObjects: true }) as string[]).map((activity) => (
+                      <li key={activity}>{activity}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </section>
+
             <div className="pt-4 border-t border-gray-400 dark:border-gray-700">
               <div className="flex items-center gap-x-2 font-[700] text-[1.3rem]">
                 <GraduationCap className="h-5 w-5" />
@@ -189,18 +235,10 @@ export default function App() {
                         className="flex flex-row pl-3 border-l-2 space-x-1 border-gray-400 dark:border-gray-700"
                       >
                         <div>
-                          <div className="flex space-x-1">
-                            <a href={project.link}>
-                              <img
-                                className="h-6 w-6 rounded-full"
-                                src={project.link + ".png"}
-                              />
-                            </a>
-                            <a
-                              href={project.link}
-                              className="font-medium hover:underline"
-                            >
-                              {project.title}
+                          <div className="flex items-center">
+                            <a href={project.link} className="inline-flex items-center gap-1 font-medium hover:underline">
+                              <ProjectImage src={project.image} />
+                              <span>{project.title}</span>
                             </a>
                           </div>
                           <div className="text-gray-600 dark:text-gray-300">
