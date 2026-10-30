@@ -1,8 +1,25 @@
 {
-  "about": "Software developer, studying Information Systems, passionate about technology and innovation.",
+  "about": "Software developer, studying Information Systems, passionate about technology and innovation. I currently work at Cast.",
   "locale": "Ipatinga, Brazil",
   "education": "Education",
   "technologies": "Technologies",
+  "experience": {
+    "title": "Professional Experience",
+    "current": "Current",
+    "cast": {
+      "logoAlt": "Cast logo",
+      "role": "Software Engineer Trainee",
+      "description": "Working as a Software Engineer Trainee on the development and maintenance of corporate web applications, across both frontend and backend, as well as supporting and improving legacy systems.",
+      "responsibilities": "My responsibilities include developing new features, implementing and maintaining business rules, integrating systems, fixing bugs, maintaining legacy applications, and working with databases.",
+      "activitiesTitle": "Key activities",
+      "activities": [
+        "Developing and improving frontend applications using Angular and TypeScript;",
+        "Developing and maintaining backend applications using Java and Spring Boot;",
+        "Working on legacy systems using Java, PrimeFaces, JSF, Hibernate, and JBoss/WildFly;",
+        "Creating and maintaining queries and scripts using Oracle SQL."
+      ]
+    }
+  },
   "formation1": {
     "title": "Bachelor of Information Systems",
     "institution": "Federal Institute of Minas Gerais (IFMG)",
@@ -17,6 +34,7 @@
       "items": [
         {
           "title": "DicioCode",
+          "image": "https://www.github.com/DicioCode.png",
           "description": "The DicioCode project aims to create an innovative application that assists newcomers in programming, functioning as a dictionary of English focused on studies. Our mission is to facilitate the learning of technical terms, providing a friendly and efficient experience for those starting in the world of programming.",
           "technologies": [
             "TypeScript",
@@ -27,6 +45,20 @@
             "Swagger"
           ],
           "link": "https://www.github.com/DicioCode"
+        },
+        {
+          "title": "Barbearia Fernandes",
+          "description": "Barbearia Fernandes is an application developed as part of the OneBit Empresa Jr trainee program to improve appointment management for barbershops. Designed to streamline scheduling, the system offers a modern, intuitive, and efficient experience for both clients and professionals, bringing technology and convenience to the daily routine of the barbershop.",
+          "technologies": [
+            "TypeScript",
+            "MySQL",
+            "React",
+            "Tailwind CSS",
+            "Next.js",
+            "Java",
+            "Spring Boot"
+          ],
+          "link": "https://www.github.com/wfabi0/barbearia-fernandes"
         }
       ]
     }
